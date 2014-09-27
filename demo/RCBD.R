@@ -13,7 +13,8 @@ sk1 <- with(RCBD,
             SK(x=dm,
                y=y,
                model='y ~ blk + tra',
-               which='tra'))
+               which='tra',
+               sig.level=.9))
 summary(sk1)
 plot(sk1)
 
